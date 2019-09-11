@@ -1,0 +1,84 @@
+// ---------------------------------------------------------------------------------------------------------------------------
+// part output list of jobs
+// ---------------------------------------------------------------------------------------------------------------------------
+
+/* <div class='result ' id='scroll_309324 0' key='309324'>
+    <div class='result_bar pointer ' onclick='window.location='https://www.karirpad.com/lowongan-kerja/detail/sales-motoris-jabodetabek/309324''>
+        <div class='result_title' title='Sales Motoris - Jabodetabek'>
+            <a style='font-size:15px;' class='bold font-pink' href='https://www.karirpad.com/lowongan-kerja/detail/sales-motoris-jabodetabek/309324'>Sales Motoris - Jabodetabek</a>
+            <br>
+            <span class=''>Tanggal pemasangan 10 September 2019</span>
+        </div>
+        <div class='coordinate'>
+            <img src='https://www.karirpad.com/assets/img/koordinat.png' alt='Coordinat'> <span class=''>- km</span>
+        </div>
+        <div class='clear-both'></div>
+    </div>
+    <div class='comp_logo'><img src='https://assets.karirpad.com/uploads/employer/logo/data/76814776-logo-300x107_thumb.png'></div>
+    <div class='comp_name'>
+        <span class='bold inline-block mbb3'>
+						<a href='https://www.karirpad.com/perusahaan/pt-tridaya-dimensi-indonesia/10856'>PT. Tridaya Dimensi Indonesi...</a>
+						</span>
+        <br>
+        <span style='font-size:13px;color:#666;'> Penempatan : </span>
+        <span class='add_s inline-block mbb3'>Jakarta Barat, DKI Jakarta</span>
+        <br><span class='add_s inline-block mbb3 italic'> Pendidikan : SMA/SMK</span>
+        <br>
+        <div class='inline-block h25'><img src='https://m.karirpad.com/assets/apps/img/gender-male.png' class='h25'></div>
+        <div class='inline-block h25'><img src='https://m.karirpad.com/assets/apps/img/gender-female.png' class='h25'></div>
+        <span class='add_s_salary ml60 mbb3'>Maks. 35 tahun</span></div>
+    <div class='vac_salary'>
+        <span>Gaji yang ditawarkan: <br>
+            <span class='bold'>Maksimal Rp. 4.000.000</span>
+            <br>
+            <form action='https://www.karirpad.com/KirimLamaran/doApply' method='post' accept-charset='utf-8'>
+                <input type='hidden' value='309324' name='vacan_id'>
+                <input type='hidden' value='Sales-Motoris-Jabodetabek' name='vacan_name'>
+                <input type='hidden' value='sr1' name='txt_vac_flag'>
+                <input id='btn_apply' style='padding-bottom: 4px;' type='submit' value='Lamar Sekarang' class='btn_size btn-radius-2 bg-pink2'>
+            </form>
+        </span>
+    </div>
+</div> */
+
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// part output detail
+// ---------------------------------------------------------------------------------------------------------------------------
+
+
+/* <div id="vacan_job">
+    <ul>
+        <li class="odd" style="">
+            <div style="width:135px;float:left;">Tingkatan Pekerjaan</div>
+            <div style="float:left;">:</div>
+            <div style="float:left;">&nbsp;Fresh Graduate</div>
+            <div style="clear:both;"></div>
+        </li>
+        <li class="even" style="">
+            <div style="width:135px;float:left;">Fungsi Pekerjaan</div>
+            <div style="float:left;">:</div>
+            <div style="float:left;width: 235px; padding-left: 4px;">IT System Analyst</div>
+            <div style="clear:both;"></div>
+        </li>
+        <li class="odd" style="">
+            <div style="width:135px;float:left;">Lokasi Penempatan</div>
+            <div style="float:left;">:</div>
+            <div style="float:left;width: 235px; padding-left: 4px;">Jakarta, DKI Jakarta</div>
+            <div style="clear:both;"></div>
+        </li>
+        <li class="even" style="">
+            <div style="width:135px;float:left;">Jenis Pekerjaan</div>
+            <div style="float:left;">:</div>
+            <div style="float:left;width: 235px; padding-left: 4px;">Full Time</div>
+            <div style="clear:both;"></div>
+        </li>
+        <li class="odd" style="">
+            <div style="width:135px;float:left;">Gaji</div>
+            <div style="float:left;">:</div>
+            <div style="float:left;">&nbsp; Rp. 4.400.000 - 6.000.000 </div>
+            <div style="clear:both;"></div>
+        </li>
+    </ul>
+
+</div> */

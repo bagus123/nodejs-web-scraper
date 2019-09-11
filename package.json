@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-web-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "SET NODE_ENV=test mocha --timeout 15000  --recursive tests -u tdd --exit",
+    "test-windows": "SET NODE_ENV=test&&mocha --timeout 15000  --recursive tests -u tdd --exit",
+    "coverage": "SET NODE_ENV=test&&nyc --reporter=html --reporter=text npm test"
+  },
+  "author": "tubagus99",
+  "email": "anwartubagus@gmail.com",
+  "license": "",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cron": "^1.7.2",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {}
+}
