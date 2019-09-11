@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 
 
@@ -33,6 +33,6 @@ new cron.CronJob({
     onTick: scraper.run,
     start: false,
     timeZone: 'Asia/Jakarta'
-});
+})
 
 

@@ -1,5 +1,5 @@
-const requestAsync = require('request-promise');
-const cheerio = require('cheerio');
+const requestAsync = require('request-promise')
+const cheerio = require('cheerio')
 const func = require('./utils/function')
 const MAX_FETCH = 100;
 const URL_KARIRPAD = 'https://www.karirpad.com/Lowongan/load_vacancy/semuanya/null/[page]'
@@ -10,7 +10,7 @@ const URL_KARIRPAD = 'https://www.karirpad.com/Lowongan/load_vacancy/semuanya/nu
 
 // do scraping from web www.karirpad.com
 async function insertOrUpdateJob(data) {
-    let job = await MODELS.Job.findOne({ jobId: data.jobId });
+    let job = await MODELS.Job.findOne({ jobId: data.jobId })
     if (job) {
         job.name = data.name
         job.slug = data.slug
@@ -30,19 +30,19 @@ async function insertOrUpdateJob(data) {
         job.publishDate = data.publishDate
         await job.save()
     } else {
-        await MODELS.Job.create(data);
+        await MODELS.Job.create(data)
     }
 }
 
 async function insertLogFetching(data) {
-    await MODELS.ScrapingLog.create(data);
+    await MODELS.ScrapingLog.create(data)
 }
 
 async function doScrapingKarirPad(page) {
     let source = 'www.karirpad.com'
     let currentURL = URL_KARIRPAD.replace('[page]', page)
-    let html = await requestAsync(currentURL);
-    let $ = cheerio.load(html);
+    let html = await requestAsync(currentURL)
+    let $ = cheerio.load(html)
 
 
     //loop element div class result
@@ -126,12 +126,12 @@ async function doScrapingKarirPad(page) {
         })
 
 
-        let htmlDetail = await requestAsync(url);
-        $ = cheerio.load(htmlDetail);
+        let htmlDetail = await requestAsync(url)
+        $ = cheerio.load(htmlDetail)
         $('#vacan_job').each(async (i, el) => {
             let pos = 0;
             $(el).find('li').each(async (i, el) => {
-                let div = $(el).find('div');
+                let div = $(el).find('div')
                 if (pos === 0) {
                     jobLevel = $(div).eq(2).text()
                 }
@@ -172,9 +172,9 @@ async function doScrapingKarirPad(page) {
         }
 
         // insert or update job
-        await insertOrUpdateJob(data);
+        await insertOrUpdateJob(data)
 
-    });
+    })
 
     let data = { source, url: currentURL, page }
     await insertLogFetching(data)
@@ -194,7 +194,7 @@ module.exports = {
     run: () => {
 
         //do scraping from web 'www.karirpad.com'
-        doScrapingKarirPad(10);
+        doScrapingKarirPad(10)
 
         //put here another source 
         // ..........

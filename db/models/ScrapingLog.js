@@ -18,7 +18,7 @@ module.exports = function (conn) {
             required: true,
         }
 
-    });
+    })
 
 
     const ScrapingLog = conn.model("ScrapingLog", scrapingLogSchema)

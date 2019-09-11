@@ -1,4 +1,4 @@
-let mongoose = require('mongoose');
+let mongoose = require('mongoose')
 let Schema = mongoose.Schema;
 
 module.exports = function (conn) {
@@ -98,14 +98,14 @@ module.exports = function (conn) {
             default: Date.now
         }
 
-    });
+    })
 
     // note : when function change to arrow function, field can't set properly
     jobSchema.pre('save', function (next) {
         const self = this
         self.updatedAt = new Date()
         next()
-    });
+    })
 
 
     const Job = conn.model('Job', jobSchema)
